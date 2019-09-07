@@ -1,4 +1,4 @@
-# IDD-Fa18-Lab1: Blink!
+# IDD-Fa19-Lab1: Blink!
 
 **A lab report by John Q. Student**
 
@@ -16,20 +16,29 @@ We've copied the questions from the lab here. Answer them below!
 ## Part B. Manually Blink a LED
 
 **a. What color stripes are on a 100 Ohm resistor?**
- 
+     Brown-Black-Brown-Yellow
 **b. What do you have to do to light your LED?**
-
+     Connect 5V to one end of the switch, and connect the other end of the switch to the long LED pin. 
+     Connect the short end of the LED to a 220 Ohm resistor to protect the LED. Connect the other end of the 
+     resistor to ground. Press the switch to close the circuit and light the LED.
 
 ## Part C. Blink a LED using Arduino
 
 ### 1. Blink the on-board LED
 
 **a. What line(s) of code do you need to change to make the LED blink (like, at all)?**
-
+     The function digitalWrite(pin, value) is used to send a digital signal of HIGH or LOW to 
+     a specified pin. There is a constant called LED_BUILTIN which is the pin for the onboard LED. Therefore we
+     need to write digitalWrite(LED_BUILTIN, HIGH) and digitalWrite(LED_BUILTIN, LOW) to blink the LED. However,
+     there is not a sufficient delay between these signals to see the LED blink. Therefore, we also need to add a delay.
+     the code for this is delay(time) where time is the duration of the delay.
+     
 **b. What line(s) of code do you need to change to change the rate of blinking?**
-
+     We can change the rate of blinking by changing the time for the delay() function.
+     
 **c. What circuit element would you want to add to protect the board and external LED?**
- 
+     We would add a resistor, to decrease the voltage drop so the external LED doesn't get too much current.
+     
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
