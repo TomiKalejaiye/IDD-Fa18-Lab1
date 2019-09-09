@@ -36,7 +36,7 @@
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
 
-I altered the code to modify the LED blinking pattern. It now does a long blink and a short blink. The modified code can be found [here](https://github.com/TomiKalejaiye/IDD-Fa18-Lab1/blob/master/blink_test.ino)
+I altered the code to modify the LED blinking pattern. It now does a long blink and a short blink. The modified code can be found [here](https://github.com/TomiKalejaiye/IDD-Fa18-Lab1/blob/master/blink_test.ino).
 
 
 ### 2. Blink your LED
