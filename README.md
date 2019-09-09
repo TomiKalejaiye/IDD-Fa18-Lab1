@@ -47,6 +47,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 
 ## Part D. Manually fade an LED
+[![Manually Fading LED](http://img.youtube.com/vi/ntJFSfLj9LU/0.jpg)](https://www.youtube.com/watch?v=ntJFSfLj9LU)
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
      The LED glows the entire range of the potentiometer but does not noticebaly change brightness throughout the entire            range. This is because the LED brightness does not vary linearly with the circuit resistance. Furthermore, even at            maximum resistance (with the pot set to 10K) there is a 0.4 mA current passing through the LED which is still enough to        light it.
