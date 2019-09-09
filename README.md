@@ -2,7 +2,7 @@
 
 ## Part A. Set Up a Breadboard
 
-[insert a photo of your breadboard setup here]
+![Breadboard Setup](https://imgur.com/a/iZ56tAn)
 
 
 ## Part B. Manually Blink a LED
@@ -41,32 +41,37 @@
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-[link to your video here; feel free to upload to youtube and just paste in a link here]
+https://www.youtube.com/watch?v=_GrkOeRKUgA
 
 
 ## Part D. Manually fade an LED
 
 **a. Are you able to get the LED to glow the whole turning range of the potentiometer? Why or why not?**
-
+     The LED glows the entire range of the potentiometer but does not noticebaly change brightness throughout the entire            range. This is because the LED brightness does not vary linearly with the circuit resistance. Furthermore, even at            maximum resistance (with the pot set to 10K) there is a 0.4 mA current passing through the LED which is still enough to        light it.
 
 ## Part E. Fade an LED using Arduino
 
 **a. What do you have to modify to make the code control the circuit you've built on your breadboard?**
+     Remove the potentiometer and recreate the circuit used for a blinking LED. In the code, we have to use the analogWrite()
+     function rather than the digitalWrite() function. We then have to gradually increase the duty cycle value for                  analogWrite().
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
-
+     analogWrite() rapidly outputs high and low digital signals at duty cycles between 0 and 255 to mimic and analog voltage        output. digitalWrite() simply outputs a high or low signal.
 
 ## Part F. FRANKENLIGHT!!!
 
 ### 1. Take apart your electronic device, and draw a schematic of what is inside. 
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
-
+     My electronic device is an LG TV remote control. There is a 4-bit microcomputer. I think the microcomputer is being used      to send an IR signal based on which buttons are pressed on the remote.
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
+     There are buttons in the remote which are wired to the microcontroller. The buttons simply make contact with the wires       underneath when you press them, thus completing a circuit, sending a signal to the microcomputer.
 
 **c. How is the device powered? Is there any transformation or regulation of the power? How is that done? What voltages are used throughout the system?**
+     The device is powered by two 1.5V AAA batteries. 
 
 **d. Is information stored in your device? Where? How?**
+     There are 16 bytes of memory on the microcomputer. 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
