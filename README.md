@@ -43,7 +43,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 **Make a video of your LED blinking, and add it to your lab submission.**
 
-https://www.youtube.com/watch?v=_GrkOeRKUgA
+[![Blinking LED](http://img.youtube.com/vi/_GrkOeRKUgA/0.jpg)](http://www.youtube.com/watch?v=_GrkOeRKUgA)
 
 
 ## Part D. Manually fade an LED
