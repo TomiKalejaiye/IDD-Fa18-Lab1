@@ -2,7 +2,7 @@
 
 ## Part A. Set Up a Breadboard
 
-[Imgur](https://imgur.com/1KFqRzd)
+![Breadboard Setup](https://imgur.com/1KFqRzd.jpg)
 
 
 ## Part B. Manually Blink a LED
