@@ -1,6 +1,6 @@
 # IDD-Fa19-Lab1: Blink!
 
-**By Tomi Kalejaiye (ok93)
+**By Tomi Kalejaiye (ok93)**
 
 ## Part A. Set Up a Breadboard
 
