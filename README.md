@@ -37,10 +37,9 @@
      We would add a resistor, to decrease the voltage drop so the external LED doesn't get too much current.
      
 **d. At what delay can you no longer *perceive* the LED blinking? How can you prove to yourself that it is, in fact, still blinking?**
-     I can no longer perceive the LED blinking at a 15 ms delay. 
+     I can no longer perceive the LED blinking at a 15 ms delay. To verify that it is still blinking, you would use an oscilloscope to read the voltages across the LED.  I've created what is essentially a simplified oscilloscope on Arduino to do this. You need to use Serial.begin(speed) in your setup. Speed here specifies the data transfer rate, which will need to be high to capture the changing voltages. analogRead() is used to read an analog input, but its values are not in volts, they are simply numbers from 0 to 1024. We need to multiply the returned number by 5 and divide by 1024. Since sending data via the serial connection is relatively slow compared to reading the voltages and storing them in memory, in my sketch I put 100 voltage values in an array, and then send them over the serial port. Finally, looking at the "Serial Monitor" on Arduino while the sketch is running, we can see if the voltages across the LED are actually changing.
 
 **e. Modify the code to make your LED blink your way. Save your new blink code to your lab 1 repository, with a link on the README.md.**
-
 I altered the code to modify the LED blinking pattern. It now does a long blink and a short blink. The modified code can be found [here](https://github.com/TomiKalejaiye/IDD-Fa18-Lab1/blob/master/blink_test.ino).
 
 
@@ -64,7 +63,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
      function rather than the digitalWrite() function. We then have to gradually increase the duty cycle value for                  analogWrite().
 
 **b. What is analogWrite()? How is that different than digitalWrite()?**
-     analogWrite() rapidly outputs high and low digital signals at duty cycles between 0 and 255 to mimic and analog voltage        output. digitalWrite() simply outputs a high or low signal.
+     analogWrite() rapidly outputs high and low digital signals at duty cycles between 0 and 255 to mimic and analog voltage        output. This is known as a pulse modulated width or PWM. digitalWrite() simply outputs a high or low signal.
 
 ## Part F. FRANKENLIGHT!!!
 
