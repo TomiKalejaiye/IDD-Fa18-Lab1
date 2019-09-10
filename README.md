@@ -11,6 +11,7 @@
 
 **a. What color stripes are on a 100 Ohm resistor?**
      Brown-Black-Brown-Yellow
+     
 **b. What do you have to do to light your LED?**
      Connect 5V to one end of the switch, and connect the other end of the switch to the long LED pin. 
      Connect the short end of the LED to a 220 Ohm resistor to protect the LED. Connect the other end of the 
@@ -72,7 +73,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
    This is a significantly simplified schematic of what is going on inside the remote control. In reality the microcomputer  has 16 total pins and appears to use a 7x8 grid circuit to accomodate input from 48 buttons. In the schematic a 2x2 grid is used for simplicity.
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
-     My electronic device is an LG TV remote control. There is a 4-bit microcomputer. I think the microcomputer is being used      to send an IR signal based on which buttons are pressed on the remote.
+     My electronic device is an LG TV remote control. There is a 4-bit microcomputer. I think the microcomputer is being used      to send a signal to the IR LED based on which buttons are pressed on the remote.
 
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
      There are buttons in the remote which are wired to the microcontroller. The buttons simply make contact with the wires       underneath when you press them, thus completing a circuit, sending a signal to the microcomputer.
