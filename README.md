@@ -80,10 +80,8 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-**Describe what you did here.**
+   Looking at my schematic, I decided to implant my LED at the power source, to use the two 1.5V batteries to light it. I put my LED on a breadboard and used two wires to manually connect each end to the board right where the VCC and GND signals respecively are.
 
 ### 3. Build your light!
 
-**Make a video showing off your Frankenlight.**
-
-**Include any schematics or photos in your lab write-up.**
+[![FrankenLight!](http://img.youtube.com/vi/cQ9g7yAQ0LE/0.jpg)](https://www.youtube.com/watch?v=cQ9g7yAQ0LE)
