@@ -17,6 +17,8 @@
      resistor to ground. Press the switch to close the circuit and light the LED.
 
 ## Part C. Blink a LED using Arduino
+[![Arduino Blinking On Board LED](http://img.youtube.com/vi/j2mCdmYxqCk/0.jpg)](http://www.youtube.com/watch?v=j2mCdmYxqCk)
+
 
 ### 1. Blink the on-board LED
 
