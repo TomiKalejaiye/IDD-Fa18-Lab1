@@ -63,7 +63,9 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 ## Part F. FRANKENLIGHT!!!
 
-### 1. Take apart your electronic device, and draw a schematic of what is inside. 
+### 1. Take apart your electronic device, and draw a schematic of what is inside.
+   ![Simplified Schematic](https://imgur.com/ua4JmAi.png)
+   This is a significantly simplified schematic of what is going on inside the remote control. In reality the microcomputer  has 16 total pins and appears to use a 7x8 grid circuit to accomodate input from 48 buttons. In the schematic a 2x2 grid is used for simplicity.
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
      My electronic device is an LG TV remote control. There is a 4-bit microcomputer. I think the microcomputer is being used      to send an IR signal based on which buttons are pressed on the remote.
