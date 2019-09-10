@@ -73,6 +73,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 **a. Is there computation in your device? Where is it? What do you think is happening inside the "computer?"**
      My electronic device is an LG TV remote control. There is a 4-bit microcomputer. I think the microcomputer is being used      to send an IR signal based on which buttons are pressed on the remote.
+
 **b. Are there sensors on your device? How do they work? How is the sensed information conveyed to other portions of the device?**
      There are buttons in the remote which are wired to the microcontroller. The buttons simply make contact with the wires       underneath when you press them, thus completing a circuit, sending a signal to the microcomputer.
 
@@ -84,7 +85,7 @@ I altered the code to modify the LED blinking pattern. It now does a long blink 
 
 ### 2. Using your schematic, figure out where a good point would be to hijack your device and implant an LED.
 
-   Looking at my schematic, I decided to implant my LED at the power source, to use the two 1.5V batteries to light it. I put my LED on a breadboard and used two wires to manually connect each end to the board right where the VCC and GND signals respecively are.
+   Looking at my schematic, I decided to implant my LED at the power source, to use the two 1.5V batteries to light it. I put my LED on a breadboard and used two wires to manually connect each end to the remote control circuit board right where the VCC and GND signals respecively are.
 
 ### 3. Build your light!
 
